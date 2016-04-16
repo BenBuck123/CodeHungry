@@ -1,13 +1,119 @@
 <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>CodeHungry.net</title>
 
-<head>
-	<title>Code Hungry</title>
-	<link rel="stylesheet" type="text/css" href="styles.css">
-	<link href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/shift.css" rel="stylesheet">
-    <link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">
-</head>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="js/main.js"></script>
+  </head>
+  <body>
+   
+    <!-- Navagation -->
+    <div class="nav">
+      <div class="container">
+        <div class="col-md-4">
+        <img src="images/logo.png" class="logo"/>
+        </div>
+        <ul class="pull-right">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Technology</a></li>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">Clients</a></li>
+          <li><a href="#">More <b class="caret"></b></a></li>
+        </ul>
+      </div>
+    </div>
 
-<body>
 
 
-</body>
+
+
+
+
+<!-- Slider -->
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="images/slider1.png" class="slider-img">
+      <div class="carousel-caption">
+        <h2 class="slider-text-h">Get our top of the line web solutions for your business.</h2>
+        <p class="slider-text-p">Click here to learn more about our website options, and to get a free quote.</p>
+      </div>
+    </div>
+    <div class="item">
+      <img src="images/slider2.png" class="slider-img">
+      <div class="carousel-caption">
+        <h2 class="slider-text-h">Planning, Social Media, Marketing.</h2>
+        <p class="slider-text-p">Our solutions to your media headaches.</p>
+      </div>
+    </div>
+    <div class="item">
+      <img src="images/slider3.png" class="slider-img">
+      <div class="carousel-caption">
+        <h2 class="slider-text-h">From our team to yours.</h2>
+        <p class="slider-text-p">Get professional advice and service, from a partner that is always here when you need it!</p>
+      </div>
+    </div>
+    
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+<div class="middle">
+  <div class="parent">
+    <div class="item item1">
+      <img src="images/coins.png" />
+      <h3>!</h3>
+      <p>Here at Breathefit, we provide you with all the information and resources you will ever need to be sucessful with your diet and fitness plans! From our expert sports scientists, to our top of the line fitness programs, we provide you with everything you need to be sucessful!</p>
+    </div>
+  
+    <div class="item item1">
+      <img src="images/computer.png" />
+      <h3>Fitness Plans!</h3>
+      <p>Breathefit brings you the highest quality and most effective fitness plans out there to fit exactly what you are looking for from your body!</p>
+    </div>
+    <div class="item item1">
+      <img src="images/business.png" />
+      <h3>Network Your Business!</h3>
+      <p>With great networking success comes great business success! Social media and digital marketing is the #1 way to get new customers! Here at codehungry.net we provide your business with the essential social media marketing strategies, and hub to really enhance your virtual presence! <a href="#">Click Here</a> to find out which package would apply for you!</p>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
