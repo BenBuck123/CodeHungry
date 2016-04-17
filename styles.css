@@ -40,6 +40,7 @@
 	background-image: url('images/thing.png');
 	background-repeat: no-repeat;
 	background-position: right;
+	width: 100%;
 }
 
  .slider-text-p {
