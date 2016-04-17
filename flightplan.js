@@ -4,7 +4,7 @@ var plan = require('flightplan');
 plan.target('production', [
   {
     host: 'codehungry.net',
-    username: 'ben@codehungry.net',
+    username: 'ben',
     port: 2222,
     agent: process.env.SSH_AUTH_SOCK
   },
