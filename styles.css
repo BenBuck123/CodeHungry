@@ -22,7 +22,9 @@
 }
 .nav {
 	height: 105px;
- 	border-bottom: 2px solid red;
+}
+.nav:before {
+	border-bottom: 5px solid red;
 }
 
  .nav li {
@@ -34,6 +36,11 @@
  	margin: 0;
  	font-family: Roboto-Light;
  }
+.nav {
+	background-image: url('images/thing.png');
+	background-repeat: no-repeat;
+	background-position: right;
+}
 
  .slider-text-p {
  	color: white;
@@ -135,7 +142,7 @@
 
 .bottom-footer {
 	height: 50px;
-	background: #247BA0;
+	background: #1B98E0;
 	text-align: center;
 	color: white;
 	padding-top: 15px;
