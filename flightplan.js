@@ -3,8 +3,8 @@ var plan = require('flightplan');
 // configuration
 plan.target('production', [
   {
-    host: 'codehungry.net',
-    username: 'ben',
+    host: 'ftp.codehungry.net',
+    username: 'ben@codehungry.net',
     port: 2222,
     agent: process.env.SSH_AUTH_SOCK
   },
