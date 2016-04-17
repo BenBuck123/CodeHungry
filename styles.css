@@ -150,6 +150,10 @@ zoom: 90%;
 	padding-top: 15px;
 	font-family: Roboto-Light;
 }
+.footer p {
+	font-family: Roboto-Light;
+	font-size: 15px;
+}
 .thing2 {
 	background-image: url(images/thing2.png);
 	background-size: cover;
@@ -197,8 +201,57 @@ border-radius: 10px; /* future proofing */
 }
 
 .section4 {
-	height: 400px;
+	height: 1000px;
 	color: white;
+	text-align: center;
 }
 
+.section5 {
+	background-image: url("http://digitalcodesmith.com/wp-content/uploads/2015/05/website-design-company.jpg");
+	background-size: cover;
+	height: 800px;
+	background-attachment: fixed;
+	text-align: center;
+	color: black;
+	font-family: Roboto-Light;
+	padding-top: 300px;
+}
 
+.section5 p {
+	font-size: 20px;
+
+}
+
+.section5 h1 {
+	font-size: 50px;
+}
+
+.overlay {
+	background: white;
+	-moz-border-radius: 10px;
+-webkit-border-radius: 10px;
+border-radius: 10px; /* future proofing */
+-khtml-border-radius: 10px; /* for old Konqueror browsers */
+	height: 200px;
+}
+
+.packages {
+	height: 400px;
+	background: white;
+	text-align: center;
+	font-family: Roboto-Light;
+
+}
+.packages h1 {
+	padding-top: 20px;
+	text-align: center;
+	font-family: Roboto-Light;
+	color: black;
+}
+
+.packages p {
+	font-size: 20px;
+}
+.active-page {
+	color: dodgerblue;
+}
