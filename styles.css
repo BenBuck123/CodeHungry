@@ -226,6 +226,7 @@ border-radius: 10px; /* future proofing */
 
 .section5 h1 {
 	font-size: 50px;
+<<<<<<< HEAD
 }
 
 .overlay {
@@ -251,6 +252,33 @@ border-radius: 10px; /* future proofing */
 	color: black;
 }
 
+=======
+}
+
+.overlay {
+	background: white;
+	-moz-border-radius: 10px;
+-webkit-border-radius: 10px;
+border-radius: 10px; /* future proofing */
+-khtml-border-radius: 10px; /* for old Konqueror browsers */
+	height: 200px;
+}
+
+.packages {
+	height: 400px;
+	background: white;
+	text-align: center;
+	font-family: Roboto-Light;
+
+}
+.packages h1 {
+	padding-top: 20px;
+	text-align: center;
+	font-family: Roboto-Light;
+	color: black;
+}
+
+>>>>>>> 83212d2f0f737fd8a54c30a536ce57e228e2a348
 .packages p {
 	font-size: 20px;
 }
