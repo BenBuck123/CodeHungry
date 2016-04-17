@@ -1,0 +1,68 @@
+/* <--- Installed Fonts ---> */
+@font-face {
+	font-family: Sketch_Block;
+	src: url("fonts/Sketch_Block.ttf");
+}
+
+@font-face {
+	font-family: Roboto-Light;
+	src: url("fonts/Roboto-Light.ttf");
+}
+
+@font-face {
+	font-family: FitnessSilhouettes;
+	src: url("fonts/FitnessSilhouettes");
+}
+body{
+zoom: 90%;
+}
+.logo {
+	height: 80%;
+	width: 80%;
+	padding-top: 25px;
+}
+.nav {
+	height: 105px;
+}
+
+
+ .nav li {
+ 	list-style: none;
+ 	display: inline;
+ 	text-decoration: none;
+ 	text-align: right;
+ 	padding-left: 50px;
+ 	font-family: Roboto-Light;
+ }
+ .nav ul {
+ 	margin-right: 50px;
+ }
+.nav {
+	background-image: url('images/thing.png');
+	background-repeat: no-repeat;
+	background-position: right;
+	background-position: 100% 100%;
+}
+.nav h1 {
+ 	width: 400px;
+ 	padding-top: 10px;
+ }
+
+ .nav ul {
+ 	margin-top: 45px;
+ }
+
+.nav a {
+	color: black;
+	text-decoration: none;
+}
+
+.nav a:hover {
+	text-decoration: none;
+	color: dodgerblue;
+}
+
+.const {
+	text-align: center;
+	font-family: Roboto-Light;
+}
