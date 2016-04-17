@@ -62,7 +62,10 @@ zoom: 90%;
 	color: dodgerblue;
 }
 
-.const {
+.title {
 	text-align: center;
 	font-family: Roboto-Light;
+}
+.description {
+	text-align: left;
 }
