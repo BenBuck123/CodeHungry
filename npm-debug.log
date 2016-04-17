@@ -1,0 +1,201 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'flightplan' ]
+2 info using npm@2.15.1
+3 info using node@v4.4.3
+4 verbose install initial load of /usr/local/lib/package.json
+5 verbose readDependencies loading dependencies from /usr/local/lib/package.json
+6 silly cache add args [ 'flightplan', null ]
+7 verbose cache add spec flightplan
+8 silly cache add parsed spec Result {
+8 silly cache add   raw: 'flightplan',
+8 silly cache add   scope: null,
+8 silly cache add   name: 'flightplan',
+8 silly cache add   rawSpec: '',
+8 silly cache add   spec: 'latest',
+8 silly cache add   type: 'tag' }
+9 silly addNamed flightplan@latest
+10 verbose addNamed "latest" is being treated as a dist-tag for flightplan
+11 info addNameTag [ 'flightplan', 'latest' ]
+12 silly mapToRegistry name flightplan
+13 silly mapToRegistry using default registry
+14 silly mapToRegistry registry https://registry.npmjs.org/
+15 silly mapToRegistry data Result {
+15 silly mapToRegistry   raw: 'flightplan',
+15 silly mapToRegistry   scope: null,
+15 silly mapToRegistry   name: 'flightplan',
+15 silly mapToRegistry   rawSpec: '',
+15 silly mapToRegistry   spec: 'latest',
+15 silly mapToRegistry   type: 'tag' }
+16 silly mapToRegistry uri https://registry.npmjs.org/flightplan
+17 verbose addNameTag registry:https://registry.npmjs.org/flightplan not in flight; fetching
+18 verbose request uri https://registry.npmjs.org/flightplan
+19 verbose request no auth needed
+20 info attempt registry request try #1 at 7:31:45 PM
+21 verbose request id aa154c238daf102a
+22 verbose etag "AR5JVJMLURGG7XAT4AGOJ1KEH"
+23 http request GET https://registry.npmjs.org/flightplan
+24 http 304 https://registry.npmjs.org/flightplan
+25 verbose headers { date: 'Sat, 16 Apr 2016 23:31:45 GMT',
+25 verbose headers   via: '1.1 varnish',
+25 verbose headers   'cache-control': 'max-age=300',
+25 verbose headers   etag: '"AR5JVJMLURGG7XAT4AGOJ1KEH"',
+25 verbose headers   age: '0',
+25 verbose headers   connection: 'keep-alive',
+25 verbose headers   'x-served-by': 'cache-ord1721-ORD',
+25 verbose headers   'x-cache': 'MISS',
+25 verbose headers   'x-cache-hits': '0',
+25 verbose headers   'x-timer': 'S1460849505.296754,VS0,VE401',
+25 verbose headers   vary: 'Accept-Encoding' }
+26 silly get cb [ 304,
+26 silly get   { date: 'Sat, 16 Apr 2016 23:31:45 GMT',
+26 silly get     via: '1.1 varnish',
+26 silly get     'cache-control': 'max-age=300',
+26 silly get     etag: '"AR5JVJMLURGG7XAT4AGOJ1KEH"',
+26 silly get     age: '0',
+26 silly get     connection: 'keep-alive',
+26 silly get     'x-served-by': 'cache-ord1721-ORD',
+26 silly get     'x-cache': 'MISS',
+26 silly get     'x-cache-hits': '0',
+26 silly get     'x-timer': 'S1460849505.296754,VS0,VE401',
+26 silly get     vary: 'Accept-Encoding' } ]
+27 verbose etag https://registry.npmjs.org/flightplan from cache
+28 verbose get saving flightplan to /Users/benbuck/.npm/registry.npmjs.org/flightplan/.cache.json
+29 verbose correctMkdir /Users/benbuck/.npm correctMkdir not in flight; initializing
+30 silly addNameTag next cb for flightplan with tag latest
+31 silly addNamed flightplan@0.6.13
+32 verbose addNamed "0.6.13" is a plain semver version for flightplan
+33 silly cache afterAdd flightplan@0.6.13
+34 verbose afterAdd /Users/benbuck/.npm/flightplan/0.6.13/package/package.json not in flight; writing
+35 verbose correctMkdir /Users/benbuck/.npm correctMkdir not in flight; initializing
+36 verbose afterAdd /Users/benbuck/.npm/flightplan/0.6.13/package/package.json written
+37 silly install resolved [ { name: 'flightplan',
+37 silly install resolved     description: 'Library for streamlining application deployment or systems administration tasks',
+37 silly install resolved     version: '0.6.13',
+37 silly install resolved     author: { name: 'Patrick Stadler', email: 'patrick.stadler@gmail.com' },
+37 silly install resolved     keywords:
+37 silly install resolved      [ 'deploy',
+37 silly install resolved        'deployment',
+37 silly install resolved        'commands',
+37 silly install resolved        'devops',
+37 silly install resolved        'exec',
+37 silly install resolved        'shell',
+37 silly install resolved        'bash',
+37 silly install resolved        'ssh',
+37 silly install resolved        'tasks',
+37 silly install resolved        'parallel',
+37 silly install resolved        'sequential',
+37 silly install resolved        'remote',
+37 silly install resolved        'local',
+37 silly install resolved        'cloud',
+37 silly install resolved        'fabric' ],
+37 silly install resolved     homepage: 'https://github.com/pstadler/flightplan',
+37 silly install resolved     repository:
+37 silly install resolved      { type: 'git',
+37 silly install resolved        url: 'git+https://github.com/pstadler/flightplan.git' },
+37 silly install resolved     bugs: { url: 'https://github.com/pstadler/flightplan/issues' },
+37 silly install resolved     bin: { fly: './bin/fly.js' },
+37 silly install resolved     scripts:
+37 silly install resolved      { docs: 'cd ./docs; node generate.js',
+37 silly install resolved        test: 'mocha',
+37 silly install resolved        lint: 'eslint .',
+37 silly install resolved        coverage: 'rm -rf ./coverage; ./node_modules/.bin/istanbul cover --dir coverage/lib ./node_modules/.bin/_mocha -- -R spec; ./node_modules/.bin/istanbul report',
+37 silly install resolved        'coverage-lcov': 'rm -rf ./coverage; ./node_modules/.bin/istanbul cover --dir coverage/lib --report lcovonly ./node_modules/.bin/_mocha -- -R spec; ./node_modules/.bin/istanbul report lcovonly',
+37 silly install resolved        coveralls: 'npm run coverage-lcov && cat ./coverage/lcov.info | ./node_modules/.bin/coveralls' },
+37 silly install resolved     'pre-commit': [ 'lint' ],
+37 silly install resolved     dependencies:
+37 silly install resolved      { byline: '^4.2.1',
+37 silly install resolved        chalk: '^1.1.1',
+37 silly install resolved        fibers: '^1.0.7',
+37 silly install resolved        interpret: '^1.0.0',
+37 silly install resolved        liftoff: '^2.2.0',
+37 silly install resolved        nopt: '^3.0.4',
+37 silly install resolved        'pretty-hrtime': '^1.0.1',
+37 silly install resolved        prompt: '^0.2.14',
+37 silly install resolved        semver: '^5.1.0',
+37 silly install resolved        ssh2: '^0.4.11',
+37 silly install resolved        'util-extend': '^1.0.1',
+37 silly install resolved        v8flags: '^2.0.10' },
+37 silly install resolved     license: 'MIT',
+37 silly install resolved     devDependencies:
+37 silly install resolved      { chai: '^3.3.0',
+37 silly install resolved        coveralls: '^2.11.4',
+37 silly install resolved        eslint: '^1.10.3',
+37 silly install resolved        istanbul: '^0.4.0',
+37 silly install resolved        markdox: '^0.1.10',
+37 silly install resolved        mocha: '^2.3.3',
+37 silly install resolved        'pre-commit': '^1.1.1',
+37 silly install resolved        proxyquire: '^1.7.3',
+37 silly install resolved        sinon: '^1.17.2' },
+37 silly install resolved     gitHead: 'b6be5c1f3e5f66efa0ba8c785b387f53a2b3aa40',
+37 silly install resolved     _id: 'flightplan@0.6.13',
+37 silly install resolved     _shasum: 'f974c751989714d961865efeccdec33800157d49',
+37 silly install resolved     _from: 'flightplan@latest',
+37 silly install resolved     _npmVersion: '3.8.0',
+37 silly install resolved     _nodeVersion: '4.3.2',
+37 silly install resolved     _npmUser: { name: 'pstadler', email: 'patrick.stadler@gmail.com' },
+37 silly install resolved     dist:
+37 silly install resolved      { shasum: 'f974c751989714d961865efeccdec33800157d49',
+37 silly install resolved        tarball: 'https://registry.npmjs.org/flightplan/-/flightplan-0.6.13.tgz' },
+37 silly install resolved     maintainers: [ [Object] ],
+37 silly install resolved     _npmOperationalInternal:
+37 silly install resolved      { host: 'packages-12-west.internal.npmjs.com',
+37 silly install resolved        tmp: 'tmp/flightplan-0.6.13.tgz_1457514090264_0.4692936355713755' },
+37 silly install resolved     directories: {},
+37 silly install resolved     _resolved: 'https://registry.npmjs.org/flightplan/-/flightplan-0.6.13.tgz',
+37 silly install resolved     readme: 'ERROR: No README data found!' } ]
+38 info install flightplan@0.6.13 into /usr/local/lib
+39 info installOne flightplan@0.6.13
+40 verbose installOne of flightplan to /usr/local/lib not in flight; installing
+41 verbose correctMkdir /Users/benbuck/.npm/_locks correctMkdir not in flight; initializing
+42 verbose lock using /Users/benbuck/.npm/_locks/flightplan-07579cfc3154c60b.lock for /usr/local/lib/node_modules/flightplan
+43 silly install write writing flightplan 0.6.13 to /usr/local/lib/node_modules/flightplan
+44 verbose unbuild lib/node_modules/flightplan
+45 silly gentlyRm /usr/local/lib/node_modules/flightplan is being purged from base /usr/local
+46 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/flightplan
+47 verbose tar unpack /Users/benbuck/.npm/flightplan/0.6.13/package.tgz
+48 verbose tar unpacking to /usr/local/lib/node_modules/flightplan
+49 silly gentlyRm /usr/local/lib/node_modules/flightplan is being purged
+50 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/flightplan
+51 silly gunzTarPerm modes [ '755', '644' ]
+52 error tar.unpack untar error /Users/benbuck/.npm/flightplan/0.6.13/package.tgz
+53 verbose unlock done using /Users/benbuck/.npm/_locks/flightplan-07579cfc3154c60b.lock for /usr/local/lib/node_modules/flightplan
+54 verbose fstream_path /usr/local/lib/node_modules/flightplan
+55 verbose fstream_type Directory
+56 verbose fstream_class DirWriter
+57 verbose stack Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/flightplan'
+57 verbose stack     at Error (native)
+58 verbose fstream_stack /usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:35:25
+58 verbose fstream_stack /usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:47:53
+58 verbose fstream_stack FSReqWrap.oncomplete (fs.js:82:15)
+59 verbose cwd /Users/benbuck/Desktop/CodeHungry
+60 error Darwin 14.0.0
+61 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "-g" "flightplan"
+62 error node v4.4.3
+63 error npm  v2.15.1
+64 error path /usr/local/lib/node_modules/flightplan
+65 error code EACCES
+66 error errno -13
+67 error syscall mkdir
+68 error Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/flightplan'
+68 error     at Error (native)
+68 error  { [Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/flightplan']
+68 error   errno: -13,
+68 error   code: 'EACCES',
+68 error   syscall: 'mkdir',
+68 error   path: '/usr/local/lib/node_modules/flightplan',
+68 error   fstream_type: 'Directory',
+68 error   fstream_path: '/usr/local/lib/node_modules/flightplan',
+68 error   fstream_class: 'DirWriter',
+68 error   fstream_stack:
+68 error    [ '/usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:35:25',
+68 error      '/usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:47:53',
+68 error      'FSReqWrap.oncomplete (fs.js:82:15)' ] }
+69 error Please try running this command again as root/Administrator.
+70 verbose exit [ -13, true ]
+71 verbose unbuild lib/node_modules/flightplan
+72 silly gentlyRm /usr/local/lib/node_modules/flightplan is being purged from base /usr/local
+73 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/flightplan
